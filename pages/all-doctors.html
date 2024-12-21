@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See All Doctors</title>
+    <link rel="stylesheet" href="../css/docstyles.css">
+</head>
+<body>
+    <main>
+        <section class="banner">
+            <h2>Our Experienced Doctors</h2>
+            <p>Providing quality healthcare for you and your family</p>
+        </section>
+
+        <div class="container">
+            <section class="doctors-list">
+                <div class="doctor-card">
+                    <img src="https://etherstaging.com/unitedhospitalapi_beta/public/DoctorProfileImg/2022100509291639572469_2_1614502376_2_Shafique%20Sir_Final%20Image-%203Copy.jpg" alt="Dr. John Doe">
+                    <h3>Dr. Abu Mohammed </h3>
+                    <p>Cardiologist</p>
+                    <button class="btn profile-btn" data-doctor="john-doe">See Profile</button>
+                    <button class="btn appoint-btn" data-doctor="john-doe">Appointment</button>
+                </div>
+                <div class="doctor-card">
+                    <img src="https://etherstaging.com/unitedhospitalapi_beta/public/DoctorProfileImg/2022100409521639460553_2_1623228498_2_Dr.%20Afreed%20IMG_4820.jpg" alt="Dr. Jane Smith">
+                    <h3>Dr. Bithi Debnath</h3>
+                    <p>Neurologist</p>
+                    <button class="btn profile-btn" data-doctor="jane-smith">See Profile</button>
+                    <button class="btn appoint-btn" data-doctor="jane-smith">Appointment</button>
+                </div>
+                <div class="doctor-card">
+                    <img src="https://www.squarehospital.com/storage/images/1670918911.png" alt="Dr. Mike Johnson">
+                    <h3>Brig. Gen. Prof. Dr. Moklesur Rahman</h3>
+                    <p>Orthopedic</p>
+                    <button class="btn profile-btn" data-doctor="mike-johnson">See Profile</button>
+                    <button class="btn appoint-btn" data-doctor="mike-johnson">Appointment</button>
+                </div>
+                <div class="doctor-card">
+                    <img src="https://bangladeshhealthalliance.com/wp-content/uploads/2022/06/Dr.-Bipul-Kumer-Sarker-Eye-Specialist-in-Dhaka.jpg" alt="Dr. Mike Johnson">
+                    <h3>Brig. Gen. Bipul Kumer Sarker</h3>
+                    <p>Orthalogy</p>
+                    <button class="btn profile-btn" data-doctor="mike-johnso">See Profile</button>
+                    <button class="btn appoint-btn" data-doctor="mike-johnso">Appointment</button>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Cardiology</li>
+                    <li>Neurology</li>
+                    <li>Pediatrics</li>
+                    <li>Orthopedics</li>
+                    <li>Dermatology</li>
+                </ul>
+
+                <h3>Doctors</h3>
+                <ul>
+                    <li>Dr. Abu Mohammed</li>
+                    <li>Dr. Bithi Debnath</li>
+                    <li>Dr. Moklesur Rahman</li>
+                    <li>Dr. Bipul Kumer Sarker</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="profileContent"></div>
+        </div>
+    </div>
+
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="reason">Reason for Visit:</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <button type="submit" class="btn">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    <script src="../js/docscript.js"></script>
+</body>
+</html>
